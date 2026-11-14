@@ -1,0 +1,557 @@
+media:
+  input: media
+  output: /media
+  rename: safe
+  extensions:
+  - png
+  - jpg
+  - jpeg
+  - webp
+  - svg
+content:
+- name: global
+  label: Company settings
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: site_name
+    label: Company display name
+    type: string
+  - name: brand_descriptor
+    label: Business descriptor
+    type: string
+  - name: tagline
+    label: Tagline
+    type: string
+  - name: logo
+    label: Logo file
+    type: image
+  - name: contact_email
+    label: Published business email
+    type: string
+  - name: contact_phone
+    label: Published business phone
+    type: string
+  - name: location
+    label: Location
+    type: string
+- name: pages
+  label: Website pages
+  type: group
+  items:
+  - name: index
+    label: Home
+    type: file
+    path: content/pages/index.json
+    format: json
+    fields:
+    - name: seo_title
+      label: SEO · Page title
+      type: string
+    - name: seo_description
+      label: SEO · Search description
+      type: text
+    - name: eyebrow_01
+      label: EYEBROW 1 — MEVCO INTERNATIONAL · LEBANON
+      type: string
+    - name: h1_01
+      label: H1 1 — Connecting global brands to local markets.
+      type: string
+    - name: p_01
+      label: P 1 — A Lebanon-based company developing focused importa
+      type: text
+    - name: p_02
+      label: 'P 2 — A local route-to-market partner for international '
+      type: string
+    - name: p_03
+      label: P 3 — Designed around pharmacies and specialty retail.
+      type: string
+    - name: p_04
+      label: P 4 — Thoughtful partnerships and lasting commercial val
+      type: string
+    - name: eyebrow_02
+      label: EYEBROW 2 — Who we are
+      type: string
+    - name: h2_01
+      label: H2 1 — Local understanding. International ambition.
+      type: string
+    - name: p_05
+      label: P 5 — MEVCO International is a Lebanon-based business be
+      type: text
+    - name: p_06
+      label: P 6 — Our founding team brings experience from several c
+      type: text
+    - name: eyebrow_03
+      label: EYEBROW 3 — Our philosophy
+      type: string
+    - name: eyebrow_04
+      label: EYEBROW 4 — Product focus
+      type: string
+    - name: h2_02
+      label: H2 2 — Everyday health. Meaningful brands.
+      type: string
+    - name: p_07
+      label: 'P 7 — A selective portfolio vision centered on products '
+      type: string
+    - name: h3_01
+      label: H3 1 — Baby & Maternal Care
+      type: string
+    - name: p_08
+      label: 'P 8 — Products supporting infants, parents and everyday '
+      type: string
+    - name: h3_02
+      label: H3 2 — Personal Care
+      type: string
+    - name: p_09
+      label: P 9 — Skin, hygiene and family personal-care essentials.
+      type: string
+    - name: h3_03
+      label: H3 3 — Supplements & Wellness
+      type: string
+    - name: p_10
+      label: P 10 — Selected products subject to relevant local approv
+      type: string
+    - name: h3_04
+      label: H3 4 — Consumer Healthcare
+      type: string
+    - name: p_11
+      label: P 11 — Potential OTC categories as regulatory capabilitie
+      type: string
+    - name: eyebrow_05
+      label: EYEBROW 5 — Our model
+      type: string
+    - name: h2_03
+      label: H2 3 — More than moving products.
+      type: string
+    - name: p_12
+      label: P 12 — We combine market research, disciplined distributi
+      type: text
+    - name: h3_05
+      label: H3 5 — Understand the market
+      type: string
+    - name: p_13
+      label: P 13 — Evaluate price positioning, local demand, competit
+      type: string
+    - name: h3_06
+      label: H3 6 — Build the route to market
+      type: string
+    - name: p_14
+      label: P 14 — Develop compliant sourcing, importation, inventory
+      type: string
+    - name: h3_07
+      label: H3 7 — Activate the brand
+      type: string
+    - name: p_15
+      label: P 15 — Develop retailer relationships, merchandising plan
+      type: string
+    - name: eyebrow_06
+      label: EYEBROW 6 — Our first market
+      type: string
+    - name: h2_04
+      label: H2 4 — Rooted in Lebanon. Built with a wider vision.
+      type: string
+    - name: p_16
+      label: P 16 — Our initial focus is creating a credible commercia
+      type: text
+    - name: eyebrow_07
+      label: EYEBROW 7 — For international manufacturers
+      type: string
+    - name: h2_05
+      label: H2 5 — Let's build something meaningful.
+      type: string
+    - name: p_17
+      label: P 17 — Tell us about your product portfolio and objective
+      type: text
+    - name: hero_image
+      label: Optional homepage hero photo (leave blank for abstract artwork)
+      type: image
+      description: Upload a wide landscape image. Leave blank to retain the current abstract design.
+  - name: about
+    label: About Us
+    type: file
+    path: content/pages/about.json
+    format: json
+    fields:
+    - name: seo_title
+      label: SEO · Page title
+      type: string
+    - name: seo_description
+      label: SEO · Search description
+      type: text
+    - name: eyebrow_01
+      label: EYEBROW 1 — About MEVCO
+      type: string
+    - name: h1_01
+      label: H1 1 — A local foundation. A global outlook.
+      type: string
+    - name: p_01
+      label: P 1 — An independent Lebanese business created to connec
+      type: text
+    - name: eyebrow_02
+      label: EYEBROW 2 — Our story
+      type: string
+    - name: h2_01
+      label: H2 1 — Commercial experience meets a focused new ambition
+      type: string
+    - name: p_02
+      label: P 2 — MEVCO International is being established by entrep
+      type: text
+    - name: p_03
+      label: P 3 — Those experiences inform our understanding of cust
+      type: text
+    - name: p_04
+      label: 'P 4 — MEVCO is a separate venture with its own strategy:'
+      type: text
+    - name: eyebrow_03
+      label: EYEBROW 3 — What drives us
+      type: string
+    - name: eyebrow_04
+      label: EYEBROW 4 — Our principles
+      type: string
+    - name: h2_02
+      label: H2 2 — How we intend to do business.
+      type: string
+    - name: h3_01
+      label: H3 1 — Trust
+      type: string
+    - name: p_05
+      label: P 5 — Clear expectations, responsible representation and
+      type: string
+    - name: h3_02
+      label: H3 2 — Focus
+      type: string
+    - name: p_06
+      label: P 6 — A deliberately selected brand portfolio rather tha
+      type: string
+    - name: h3_03
+      label: H3 3 — Local insight
+      type: string
+    - name: p_07
+      label: P 7 — Commercial decisions informed by Lebanese consumer
+      type: string
+    - name: h3_04
+      label: H3 4 — Long-term value
+      type: string
+    - name: p_08
+      label: P 8 — Partnerships built around sustainable sales, reord
+      type: string
+    - name: eyebrow_05
+      label: EYEBROW 5 — For international manufacturers
+      type: string
+    - name: h2_03
+      label: H2 3 — Let's build something meaningful.
+      type: string
+    - name: p_09
+      label: P 9 — Tell us about your product portfolio and objective
+      type: text
+  - name: capabilities
+    label: What We Do
+    type: file
+    path: content/pages/capabilities.json
+    format: json
+    fields:
+    - name: seo_title
+      label: SEO · Page title
+      type: string
+    - name: seo_description
+      label: SEO · Search description
+      type: text
+    - name: eyebrow_01
+      label: EYEBROW 1 — What we do
+      type: string
+    - name: h1_01
+      label: H1 1 — A thoughtful route to market.
+      type: string
+    - name: p_01
+      label: P 1 — MEVCO is developing the commercial and operational
+      type: text
+    - name: eyebrow_02
+      label: EYEBROW 2 — Core offering
+      type: string
+    - name: h2_01
+      label: H2 1 — From market evaluation to retailer activation.
+      type: string
+    - name: p_02
+      label: P 2 — Our operating model is designed to support manufac
+      type: string
+    - name: h3_01
+      label: H3 1 — Market and pricing assessment
+      type: string
+    - name: p_03
+      label: P 3 — Category research, competitor review, consumer pos
+      type: string
+    - name: h3_02
+      label: H3 2 — Regulatory coordination
+      type: string
+    - name: p_04
+      label: P 4 — Product classification and coordination with quali
+      type: string
+    - name: h3_03
+      label: H3 3 — Importation and fulfillment
+      type: string
+    - name: p_05
+      label: P 5 — Development of compliant logistics, inventory, war
+      type: string
+    - name: h3_04
+      label: H3 4 — Retail account development
+      type: string
+    - name: p_06
+      label: P 6 — Structured outreach to relevant pharmacies, baby r
+      type: text
+    - name: h3_05
+      label: H3 5 — Brand launch support
+      type: string
+    - name: p_07
+      label: P 7 — Retail materials, product education, promotional p
+      type: text
+    - name: h3_06
+      label: H3 6 — Performance reviews
+      type: string
+    - name: p_08
+      label: P 8 — Periodic reporting on sales activity, retail penet
+      type: text
+    - name: eyebrow_03
+      label: EYEBROW 3 — For international manufacturers
+      type: string
+    - name: h2_02
+      label: H2 2 — Let's build something meaningful.
+      type: string
+    - name: p_09
+      label: P 9 — Tell us about your product portfolio and objective
+      type: text
+  - name: categories
+    label: Product Categories
+    type: file
+    path: content/pages/categories.json
+    format: json
+    fields:
+    - name: seo_title
+      label: SEO · Page title
+      type: string
+    - name: seo_description
+      label: SEO · Search description
+      type: text
+    - name: eyebrow_01
+      label: EYEBROW 1 — Portfolio focus
+      type: string
+    - name: h1_01
+      label: H1 1 — Purposeful products for everyday living.
+      type: string
+    - name: p_01
+      label: P 1 — We are building a selective consumer-health portfo
+      type: text
+    - name: h2_01
+      label: H2 1 — Baby & Maternal Care
+      type: string
+    - name: p_02
+      label: P 2 — Baby hygiene, practical infant-care accessories, f
+      type: text
+    - name: h2_02
+      label: H2 2 — Personal Care
+      type: string
+    - name: p_03
+      label: P 3 — Family hygiene, personal-care essentials, skin and
+      type: string
+    - name: h2_03
+      label: H2 3 — Supplements & Wellness
+      type: string
+    - name: p_04
+      label: P 4 — Selected nutritional and wellness categories, cont
+      type: text
+    - name: h2_04
+      label: H2 4 — Consumer Healthcare & OTC
+      type: string
+    - name: p_05
+      label: P 5 — Potential future pharmaceutical and OTC product ca
+      type: text
+    - name: eyebrow_02
+      label: EYEBROW 2 — Selective by design
+      type: string
+    - name: h2_05
+      label: H2 5 — Portfolio quality over portfolio size.
+      type: string
+    - name: p_06
+      label: P 6 — We prioritize distinctive products, credible manuf
+      type: text
+  - name: partners
+    label: Manufacturer Partnerships
+    type: file
+    path: content/pages/partners.json
+    format: json
+    fields:
+    - name: seo_title
+      label: SEO · Page title
+      type: string
+    - name: seo_description
+      label: SEO · Search description
+      type: text
+    - name: eyebrow_01
+      label: EYEBROW 1 — For manufacturers
+      type: string
+    - name: h1_01
+      label: H1 1 — Your partner for a focused entry into Lebanon.
+      type: string
+    - name: p_01
+      label: P 1 — We welcome conversations with international consum
+      type: text
+    - name: eyebrow_02
+      label: EYEBROW 2 — Why MEVCO
+      type: string
+    - name: h2_01
+      label: H2 1 — Attention, alignment and local understanding.
+      type: string
+    - name: p_02
+      label: P 2 — Entering a new market requires more than a shipmen
+      type: text
+    - name: p_03
+      label: P 3 — Our proposed approach combines market evaluation w
+      type: text
+    - name: eyebrow_03
+      label: EYEBROW 3 — Our commitment
+      type: string
+    - name: eyebrow_04
+      label: EYEBROW 4 — How a partnership begins
+      type: string
+    - name: h2_02
+      label: H2 2 — From first conversation to a launch plan.
+      type: string
+    - name: h3_01
+      label: H3 1 — Understand your brand
+      type: string
+    - name: p_04
+      label: 'P 4 — Product range, distribution objectives, territory '
+      type: text
+    - name: h3_02
+      label: H3 2 — Evaluate the opportunity
+      type: string
+    - name: p_05
+      label: P 5 — Market fit, import eligibility, SKU economics, pri
+      type: string
+    - name: h3_03
+      label: H3 3 — Agree on a launch framework
+      type: string
+    - name: p_06
+      label: P 6 — Commercial terms, initial range, inventory plan, a
+      type: string
+    - name: eyebrow_05
+      label: EYEBROW 5 — For international manufacturers
+      type: string
+    - name: h2_03
+      label: H2 3 — Let's build something meaningful.
+      type: string
+    - name: p_07
+      label: P 7 — Tell us about your product portfolio and objective
+      type: text
+  - name: contact
+    label: Contact
+    type: file
+    path: content/pages/contact.json
+    format: json
+    fields:
+    - name: seo_title
+      label: SEO · Page title
+      type: string
+    - name: seo_description
+      label: SEO · Search description
+      type: text
+    - name: eyebrow_01
+      label: EYEBROW 1 — Get in touch
+      type: string
+    - name: h1_01
+      label: H1 1 — Start a conversation.
+      type: string
+    - name: p_01
+      label: P 1 — Tell us about your company, product range and what
+      type: string
+    - name: eyebrow_02
+      label: EYEBROW 2 — Manufacturer partnerships
+      type: string
+    - name: h2_01
+      label: H2 1 — Let's explore a fit.
+      type: string
+    - name: p_02
+      label: P 2 — We welcome inquiries from international manufactur
+      type: text
+    - name: p_03
+      label: P 3 — MEVCO International Lebanon
+      type: string
+  - name: privacy
+    label: Privacy Notice
+    type: file
+    path: content/pages/privacy.json
+    format: json
+    fields:
+    - name: seo_title
+      label: SEO · Page title
+      type: string
+    - name: seo_description
+      label: SEO · Search description
+      type: text
+    - name: eyebrow_01
+      label: EYEBROW 1 — Privacy
+      type: string
+    - name: h1_01
+      label: H1 1 — Privacy notice
+      type: string
+    - name: p_01
+      label: 'P 1 — How information submitted through this website is '
+      type: string
+    - name: h2_01
+      label: H2 1 — Business inquiries
+      type: string
+    - name: p_02
+      label: P 2 — When you submit a message through the contact form
+      type: text
+    - name: h2_02
+      label: H2 2 — Information collected
+      type: string
+    - name: p_03
+      label: P 3 — The form requests your name, company, business ema
+      type: text
+    - name: h2_03
+      label: H2 3 — Service providers
+      type: string
+    - name: p_04
+      label: 'P 4 — If deployed to Netlify, submissions are processed '
+      type: text
+    - name: h2_04
+      label: H2 4 — Contact and updates
+      type: string
+    - name: p_05
+      label: P 5 — Before publishing, add the company's legal identit
+      type: text
+- name: brands
+  label: Authorized brands
+  type: file
+  path: content/brands.json
+  format: json
+  list: true
+  fields:
+  - name: name
+    label: Brand name
+    type: string
+    required: true
+  - name: slug
+    label: Unique URL slug (lowercase letters, digits and hyphens)
+    type: string
+    required: true
+    pattern: ^[a-z0-9-]+$
+  - name: published
+    label: Show publicly (only after representation is authorized)
+    type: boolean
+  - name: category
+    label: Category
+    type: string
+  - name: summary
+    label: Short summary
+    type: text
+  - name: description
+    label: Detailed brand description
+    type: text
+  - name: logo
+    label: Brand logo (use only with permission)
+    type: image
+  - name: image
+    label: Product or brand image (use only with permission)
+    type: image
